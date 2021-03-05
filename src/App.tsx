@@ -1,14 +1,11 @@
 import React from 'react';
-import { Typography, createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core"
+import { createMuiTheme, ThemeProvider, CssBaseline } from "@material-ui/core"
 import {
   indigo,
   lightBlue,
-  blueGrey
 } from "@material-ui/core/colors"
-import logo from './logo.svg';
 import './App.css';
-import Dashboard from './Pages/Dashboard'
-import Layout from './Layout/Layout'
+import Router from "./router"
 
 const theme = createMuiTheme({
   typography: {
@@ -61,9 +58,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Layout>
-        <Dashboard />
-      </Layout>
+      <Router />
     </ThemeProvider>
   );
 }

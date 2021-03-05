@@ -21,7 +21,6 @@ const Layout = (props: any) => {
     return (
         <div className={classes.appContainer}>
             <Drawer open={open} closeDrawerCallback={() => {
-                console.log('closing drawer')
                 setOpen(false)
             }} />
             <Container disableGutters maxWidth={false} style={{ overflow: "hidden" }}>

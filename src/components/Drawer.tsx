@@ -2,14 +2,11 @@ import React from "react"
 import clsx from "clsx"
 import {
     Drawer as MaterialDrawer,
-    Divider,
     IconButton,
     makeStyles,
     useTheme
 } from "@material-ui/core"
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft"
-import deepPurple from '@material-ui/core/colors/deepPurple';
-import indigo from "@material-ui/core/colors/indigo"
 import NavMenu from "../components/NavMenu"
 
 const drawerWidth = 260;
@@ -110,11 +107,6 @@ const Drawer = (props: any) => {
                     <ChevronLeftIcon style={{ color: theme.palette.primary.contrastText }} />
                 </IconButton>
             </div>
-            <Divider
-                classes={{
-                    root: classes.divider
-                }}
-            />
             <NavMenu />
         </MaterialDrawer>
     )
